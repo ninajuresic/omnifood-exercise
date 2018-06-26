@@ -184,7 +184,7 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 .logo {
     height: 100px;
@@ -192,6 +192,17 @@ header {
     float: left;
     margin-top: 20px;
 }
+
+.logo-black { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0px;
+}
+
+
+/* Main navi----------------*/
 .main-nav {
     float: right;
     list-style: none;
@@ -215,6 +226,32 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
+/* Sticky navi---------------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.999);
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 9999;
+
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 18px 0;
+    color: #555;
+}
+.sticky .logo {display: none;}
+.sticky .logo-black { display: block;}
+
+.sticky .main-nav { margin-top: 18px;}
+
+
+
 /* features-------------------------------------------------------------*/ 
 
 .section-features .long-copy {
@@ -245,12 +282,12 @@ header {
     opacity: 0.7;
     width: 100%;
     height: auto;
-    transform: scale(1.15);
-    transition: transform 0.5s, opacity 0.5s;
+    -webkit-transform: scale(1.15);
+    -webkit-transition: transform 0.5s, opacity 0.5s;
 }
 .meal-photo img:hover {
     opacity: 1;
-    transform: scale(1.03 );
+    -webkit-transform: scale(1.03 );
 }
 
 /* how it works-------------------------------------------------------------*/ 
@@ -471,3 +508,19 @@ footer p {
     font-size: 90%;
     margin-top: 50px;
 }
+
+/* Animations ----------------*/
+.js--wp-1
+.js--wp-2 
+.js--wp-3  {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+}
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+}
+.js--wp-1.animated
+.js--wp-2.animated
+.js--wp-3.animated {
+    opacity: 1;
+}   
