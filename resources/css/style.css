@@ -172,7 +172,7 @@ input[type=submit]:active {
 /* Header -------------------------------------------------------------*/
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), transparent), url(img/hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), transparent), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -367,8 +367,8 @@ header {
 
 /* section testemonials-------------------------------------------------------------*/ 
 
-.section-testemonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers-min.jpg);
     background-size: cover;
     color: white;
     background-attachment: fixed;
@@ -524,8 +524,8 @@ footer p {
 }
 
 /* Animations ----------------*/
-.js--wp-1
-.js--wp-2 
+.js--wp-1,
+.js--wp-2,
 .js--wp-3  {
     opacity: 0;
    
@@ -533,8 +533,8 @@ footer p {
 .js--wp-4 {
     
 }
-.js--wp-1.animated
-.js--wp-2.animated
+.js--wp-1.animated,
+.js--wp-2.animated,
 .js--wp-3.animated {
     opacity: 1;
 }   

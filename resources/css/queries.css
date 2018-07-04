@@ -56,9 +56,9 @@
         margin: 8px 0;
     }
     .row,
-    .hero-text-box { padding: 0 1%;}
+    .hero-text-box { padding: 0 4%;}
 
-    /*.main-nav { display: none;}*/
+    .main-nav { display: none;}
     .mobile-nav-icon {display: inline-block;}
 
     .main-nav {
@@ -144,3 +144,6 @@
     .box img { height: 150px; }
     
 }
+
+/* Mobile navigation */
+
